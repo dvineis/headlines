@@ -22,7 +22,8 @@
 				</select>
 			to: <select name="currency_to">
 				{% for currency in currencies %}
-				<option value="{{currency}}">
+				<option value="{{currency}}"
+				{{'selected="selected"' if currency_to==currency}}>
 				{{currency}}</option>
 				{% endfor %}
 			</select>
